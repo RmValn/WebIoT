@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title" %}
+Blyaaaaaa
+{% endblock %}
+
+{% block content %}
+{% if passwd == 13%}
+<h1>Hello baby</h1>
+{% else %}
+<h1>Hello Huynya yebana!</h1>
+{% endif %}
+<p>Welcome to my first Django project!</p>
+<ul>
+    {% for x in mymembers %}
+      <li>{{ x }}</li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
